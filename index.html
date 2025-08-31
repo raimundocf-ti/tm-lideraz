@@ -1,17 +1,149 @@
 <!doctype html>
-<html lang="pt-BR">
-  <head>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-      <link rel="stylesheet" href="src/style.css">
-  </head>
-  <body>
-  <div class="max-w-xl">
-      <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Tailwindcss4 + Ivonfy</h2>
-      <p class="mt-6 text-lg/8 text-gray-600"><span class="icon-[mdi-light--home]"></span></p>
-  </div>
+    <title>LideraZap - Transformando Negócios Digitais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-primary { background-color: #6C5CE7; }
+        .text-primary { color: #6C5CE7; }
+        .border-primary { border-color: #6C5CE7; }
+        .bg-gradient-hero {
+            background-image: linear-gradient(to bottom right, #f8f8f8, #e0e0f8);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-  </body>
+<header class="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="#" class="flex-shrink-0">
+                    <img class="h-8 w-auto" src="/images/logo-liderazap.png" alt="LideraZap Logo" onerror="this.src='https://placehold.co/128x32/6C5CE7/ffffff?text=LideraZap'">
+                </a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#" class="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="#servicos" class="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">Serviços</a>
+                    <a href="#contato" class="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="pt-16">
+    <section class="relative w-full bg-gray-50 py-20 md:py-28 scroll-mt-24">
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+            <svg class="absolute left-[50%] top-0 h-[100%] w-[100%] -translate-x-1/2" viewBox="0 0 1024 1024" aria-hidden="true">
+                <circle cx="512" cy="512" r="512" fill="url(#gradient-radial-hero)" fill-opacity="0.2"></circle>
+                <defs>
+                    <radialGradient id="gradient-radial-hero">
+                        <stop stop-color="#8B5CF6"></stop>
+                        <stop offset="1" stop-color="#6D28D9"></stop>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center gap-6 px-6">
+            <span class="block text-base md:text-lg font-semibold text-primary">
+                A Revolução Digital do Seu Negócio
+            </span>
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-balance bg-gradient-to-r from-primary to-indigo-800 bg-clip-text text-transparent">
+                Tenha Sua Loja Virtual Direto no WhatsApp
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 mt-2 max-w-2xl">
+                Soluções definitivas para seu WhatsApp Business, redes sociais e presença online. Fale com quem realmente entende e resolve seu problema.
+            </p>
+        </div>
+    </section>
+
+    <section class="relative z-10">
+        <div class="max-w-4xl mx-auto px-6 -mt-16">
+            <div class="bg-white rounded-2xl shadow-xl border border-primary/40 p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6 md:gap-4">
+                    <div class="md:col-span-2 flex justify-center">
+                        <span class="icon-[fa-brands--whatsapp] text-7xl text-primary"></span>
+                    </div>
+                    <div class="md:col-span-6 text-center md:text-left">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800">Precisa de uma solução rápida?</h3>
+                        <p class="text-gray-600 mt-1">Sem robôs ou menus complicados. Fale diretamente com um especialista.</p>
+                    </div>
+                    <div class="md:col-span-4 flex justify-center md:justify-end">
+                        <a href="https://wa.me/553298408646" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-primary hover:bg-indigo-700 text-white font-bold px-6 py-3 rounded-lg shadow-lg transition-transform hover:scale-105 w-full md:w-auto justify-center">
+                            <span class="icon-[fa-brands--whatsapp] w-6 h-6"></span>
+                            <span>(32) 9 9840-8646</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="w-full py-16 md:py-24 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-6 md:px-10">
+            <h2 class="text-center text-base/7 font-semibold text-primary">Nossos Serviços</h2>
+            <p class="mx-auto mt-2 max-w-2xl text-center text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+                Soluções completas para suas necessidades de tecnologia
+            </p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center gap-3 border border-primary/40 text-center">
+                    <span class="icon-[akar-icons--instagram-fill] text-4xl text-primary mb-3"></span>
+                    <h3 class="text-xl font-semibold text-gray-900">Gestão de Redes Sociais & Conteúdo</h3>
+                    <p class="text-gray-700">Criação de posts, Reels, planejamento de conteúdo, agendamento e monitoramento de publicações.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center gap-3 border border-primary/40 text-center">
+                    <span class="icon-[fa-brands--whatsapp] text-4xl text-primary mb-3"></span>
+                    <h3 class="text-xl font-semibold text-gray-900">Catálogo de Vendas no WhatsApp</h3>
+                    <p class="text-gray-700">Configuração, funil de conversão, integração com e-commerce e consultoria para vendas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="w-full py-16 md:py-24 bg-primary text-white">
+        <div class="max-w-3xl mx-auto px-6 flex flex-col items-center text-center">
+            <span class="icon-[fa-brands--whatsapp] text-7xl text-white mb-4"></span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white text-balance tracking-tight">
+                Pronto para impulsionar seu negócio?
+            </h2>
+            <p class="mt-4 text-lg md:text-xl text-indigo-100 max-w-xl">
+                Sem formulários, sem espera. Clique no botão abaixo para falar diretamente conosco no WhatsApp.
+            </p>
+            <a href="https://wa.me/553298408646?text=Olá! Gostaria de saber mais sobre os serviços da LideraZap." target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-primary font-bold px-8 py-4 rounded-full shadow-lg transition-transform hover:scale-105">
+                <span class="icon-[fa-brands--whatsapp] w-8 h-8"></span>
+                <span class="text-xl">(32) 9 9840-8646</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex flex-col items-center justify-center">
+            <img class="h-8 w-auto mb-4" src="/images/logo-liderazap-br.png" alt="LideraZap Logo">
+            <p class="text-sm text-gray-400">&copy; 2025 LideraZap. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
